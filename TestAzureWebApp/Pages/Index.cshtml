@@ -1,0 +1,208 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "My Resume";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+
+body{
+	background: #e9e9e9;
+	height: 122vh;
+	
+	letter-spacing: 2px;
+}
+:root{
+	--main-color:#4f5963;
+	--light-color:#4f59634d;
+}
+*{margin: 0px; padding: 0px; font-family: 'Montserrat', sans-serif;}
+.main{
+	background: white;
+	height: auto;
+	width: 650px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+			top: 70%;
+	box-shadow: 5px 2px 14px 10px #eeeaea;
+	border-top: 10px solid var(--main-color);
+	border-bottom:10px solid var(--main-color);
+}
+
+.left{
+	padding: 0px 0px 0px 20px;
+	width: 220px;
+	height: 100%;
+	float: left;
+}
+.right{width: 409px; float: left; border-left: 1px solid var(--light-color);}
+.box-1{position: relative;
+}
+.p1{padding: 10px 0px; font-size: 11px;}
+.icons1{
+	font-size: 16px!important;
+	padding-right: 10px!important;
+	vertical-align: sub;
+	background: var(--main-color);
+	color: white;
+	padding: 7px;
+	width: 12px;
+	border-radius: 21px;
+	margin-right: 10px;
+}
+.skill{
+	margin-left: 20px; font-size: 12px; font-weight: normal;
+}
+.hr1{
+	width: 195px;
+	border: none;
+	background: var(--light-color);
+	height: 1px;
+	margin-top: 10px;
+}
+.hr2{
+	width: 299px;
+	border: none;
+	background: var(--light-color);
+	height: 1px;
+	margin-top: 10px;
+}
+.skill li{
+	padding: 13px 0px;
+}
+h1{margin-bottom: 10px;}
+h1 span{letter-spacing: 13px;}
+.sd{
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.2px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+.box-2{padding: 0px 50px; margin-top: 30px;}
+.p2{
+	font-size: 10px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	line-height: 18px;
+	margin-top: 5px;
+}
+h2{font-size: 16px; margin-bottom: 15px; color: var(--main-color);}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<div class="left">
+			<br /><br />
+			<h1><span>Jayesh</span> Patanvadiya</h1>
+			<p class="sd">Software Developer</p>
+
+			<div class="box-1">
+				<p class="heading">CONTACT</p>
+				<br />
+
+				<p class="p1"><i class="material-icons icons1">call</i>+121-2323-2323</p>
+				<p class="p1"><i class="material-icons icons1">email</i>info@yourweb.com</p>
+				<p class="p1"><i class="material-icons icons1">map</i>MV Phase-III</p>
+				<p class="p1"><i class="material-icons icons1">fax</i>lorem Dummy</p>
+
+				<hr class="hr1">
+			</div>
+
+			<div class="box-1">
+				<br />
+				<p class="heading">EDUCATION</p>
+				<p class="p2" style="width: 200px;">
+					Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has
+				</p>
+				<p class="p2" style="width: 200px;">
+					Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has
+				</p>
+				<br />
+				<hr class="hr1">
+			</div>
+
+			<div class="box-1">
+				<br />
+				<p class="heading">SKILLS</p>
+				<ul class="skill">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JAVASCRIPT</li>
+					<li>JQUERY</li>
+					<li>ANGULAR</li>
+					<li>BOOTSTRAP</li>
+					<li>RXJS</li>
+					<li>TYPESCRIPT</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="right">
+
+			<div class="box-2">
+				<h2>PROFILE</h2>
+				<p class="p2">Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has</p>
+
+				<hr class="hr2" />
+			</div>
+
+			<div class="box-2">
+				<h2>EXPERIENCE</h2>
+				<h4 style="font-size: 12px; font-weight: 600;">Write Your Job Title</h4>
+				<p class="p2">
+					Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has
+				</p>
+
+				<p class="p2">
+					Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has
+				</p>
+				<br />
+				<hr class="hr2">
+				<br />
+				<h4 style="font-size: 12px; font-weight: 600;">Write Your Job Title</h4>
+				<p class="p2">
+					Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has
+				</p>
+
+				<p class="p2">
+					Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has
+				</p>
+				<br />
+				<hr class="hr2">
+				<br />
+
+				<h4 style="font-size: 12px; font-weight: 600;">Write Your Job Title</h4>
+				<p class="p2" style="padding-bottom: 20px;">
+					Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has
+				</p>
+
+				<p class="p2" style="padding-bottom: 20px;">
+					Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has Lorme ispum is simply dummy text of the printing and typesetting industry. lorem ipsum has
+				</p>
+				<p class="p2" style="padding-bottom: 20px;">
+					Lorme ispum is simply dummy text of the printing and typesetting industry.
+				</p>
+
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
